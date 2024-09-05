@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 29aef6cb293dfe44082232b5a14d038a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - RailMesh: {fileID: 991503290360816269, guid: 12c21cbd901fb944ab3fe9690d46e3f3,
+      type: 3}
+  - TieMesh: {fileID: 1009116574429913456, guid: 12c21cbd901fb944ab3fe9690d46e3f3,
+      type: 3}
+  - Material: {fileID: 2100000, guid: 08b4db5c64486d6419186841798dfd30, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
