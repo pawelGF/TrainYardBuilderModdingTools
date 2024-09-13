@@ -54,6 +54,7 @@ MonoBehaviour:
   Category: 2
   Price: 1
   CanOnlyRotate90Degrees: 1
+  canBeDirty: 0
   Tags: 
   ValidPlacementLayers: 00000000
   guid:
@@ -70,8 +71,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29aef6cb293dfe44082232b5a14d038a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RailMesh: {fileID: 991503290360816269, guid: 12c21cbd901fb944ab3fe9690d46e3f3, type: 3}
-  TieMesh: {fileID: 1009116574429913456, guid: 12c21cbd901fb944ab3fe9690d46e3f3, type: 3}
   TrackOffsetFromGround: 0.1
   Type: 11
 --- !u!114 &1651879123257424725
@@ -86,7 +85,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d1f302cb04ea24fa021be0f44e02c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Photo: {fileID: 21300000, guid: 8a0cc1a6d18b333459e345c8f089b9c5, type: 3}
+  Photo: {fileID: 21300000, guid: 5e84d24313dd75d4486f55a714778b1f, type: 3}
+  DirtyPhoto: {fileID: 0}
 --- !u!1 &4865814336556266330
 GameObject:
   m_ObjectHideFlags: 0
