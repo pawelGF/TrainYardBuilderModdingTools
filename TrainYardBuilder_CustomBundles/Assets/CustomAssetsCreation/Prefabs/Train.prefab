@@ -256,6 +256,7 @@ MonoBehaviour:
   Category: 1
   Price: 1
   CanOnlyRotate90Degrees: 1
+  canBeDirty: 0
   Tags: 18000000
   ValidPlacementLayers: 01000000
   guid:
@@ -273,6 +274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Photo: {fileID: 0}
+  DirtyPhoto: {fileID: 0}
 --- !u!114 &2250529049597359395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,9 +287,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60cb60d3162e5fd4cb0051ecca1e00d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MinSpeed: 0
-  MaxSpeed: 20
-  DefaultSpeed: 10
   FrontWheelsPosition: {fileID: 5112095088094713085}
   BackWheelsPosition: {fileID: 2479492481179885681}
   FrontDetectorPosition: {fileID: 761798669912936691}
@@ -318,7 +317,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2581679244534827528}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.876}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -349,7 +348,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2785861272898701966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.818}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -365,7 +364,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 761798669912936691}
-  - component: {fileID: 871539542430064856}
+  - component: {fileID: 3043042153496805616}
   m_Layer: 0
   m_Name: FrontDetectorPosition
   m_TagString: Untagged
@@ -380,24 +379,25 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4490824261827072976}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.75, z: -2}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.75, z: 1.981}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1652959843694148537}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &871539542430064856
-SphereCollider:
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!136 &3043042153496805616
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4490824261827072976}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}

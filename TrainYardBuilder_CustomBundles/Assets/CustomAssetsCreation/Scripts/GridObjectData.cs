@@ -14,7 +14,7 @@ namespace CustomObjectsCreation
         public List<LocaleName> LocalizedName = new();
         public GridObjectCategory Category;
         
-        [Min(MinPrice)] public int Price = 1;
+        [Min(MinPrice)] [HideInInspector] public int Price = 1; // depreciated
         public bool CanOnlyRotate90Degrees = true;
         public bool canBeDirty = false;
         
