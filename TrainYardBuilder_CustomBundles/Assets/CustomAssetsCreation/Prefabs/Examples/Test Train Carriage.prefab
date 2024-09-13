@@ -80,6 +80,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5644135105938905619, guid: 38c49190cabcd2e4da895d2ef6564962,
         type: 3}
+      propertyPath: canBeDirty
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644135105938905619, guid: 38c49190cabcd2e4da895d2ef6564962,
+        type: 3}
       propertyPath: LocalizedName.Array.data[0].Name
       value: Test Train Carriage
       objectReference: {fileID: 0}
