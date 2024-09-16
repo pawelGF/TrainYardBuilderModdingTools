@@ -47,8 +47,6 @@ namespace CustomObjectsCreation
                 gameObject.AddComponent<TrackSettings>();
             else if (Category != GridObjectCategory.Tracks && hasTrackSettings) 
                 trackSettingsToDestroy = trackSettings;
-
-            AutoSetEnglishName();
         }
 
         void Update()
@@ -61,27 +59,6 @@ namespace CustomObjectsCreation
         }
 
         // METHODS
-        void AutoSetEnglishName()
-        {
-            if(setEnglishNameFromPrefabName == false)
-            {
-                return;
-            }
-            LocaleName englishLocaleName = new LocaleName("en", gameObject.name);
-            if (LocalizedName.Count == 0)
-            {
-                LocalizedName.Add(englishLocaleName);
-            }
-            else
-            {
-                int enLocaleIndex = LocalizedName.FindIndex(x => x.LocaleId == "en");
-                if (enLocaleIndex == -1)
-                    LocalizedName.Add(englishLocaleName);
-                else
-                    LocalizedName[enLocaleIndex] = englishLocaleName;
-            }
-        }
-
         public enum GridObjectCategory
         {
             Decoration,
