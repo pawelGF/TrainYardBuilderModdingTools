@@ -10,7 +10,8 @@ namespace CustomObjectsCreation
         const int MinPrice = 1;
 
         // PUBLIC
-        public bool setEnglishNameFromPrefabName = true;
+        // depreciated
+        [HideInInspector] public bool setEnglishNameFromPrefabName = true;
         public List<LocaleName> LocalizedName = new();
         public GridObjectCategory Category;
         
